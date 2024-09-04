@@ -1,204 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>theberith</title>
-
-    <script src="https://kit.fontawesome.com/8f11bc9294.js" crossorigin="anonymous"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="images/Grey logo.png" alt="">
-        </div>
-        <div class="justify-content-end">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>theberith</title>
+  <script src="https://kit.fontawesome.com/8f11bc9294.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/Grey logo.png" alt="">
+      </div>
+      <div class="hamburger-container" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-cta-container">
+        <div class="nav-ul-closeicon">
           <ul>
             <li><a href="#solutions">Solutions</a></li>
-            <li class="" onclick="redirectToAboutUs()">About Us</li>
-            <li><a href="#appointment">Schedule appointment</a></li>
+            <li onclick="redirectToAboutUs()">About Us</li>
           </ul>
+          <div class="close-container" onclick="toggleNav()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
         </div>
-      </nav>
-
-      <section class="homepage text-center">
-        <div class="homepage-container">
-          <header>
-            <h1>Elevating Spaces with Unmatched Sophistication</h1>
-          </header>
-          <!-- <div class="homepage">
-            <div class="homepage-image-container front">
-              <img class="homepage-img" src="images/3.png" alt="">
-            </div>
-          </div> -->
-          </div>
-          <div>
-              <h2>Where Cutting-Edge Technology Meets Luxury</h2>
-          </div>
-          <button type="button" class="btn btn-outline-secondary"><a href="#discoverSolutions">Discover Our Solutions</a></button>
-      </section>
-
-      <section class="welcome">
-        <div class="video-background">
-          <video autoplay muted loop>
-            <source src="images/gif intro.MP4" type="video/mp4">
-            Your browser does not support the video tag
-          </video>
-        </div>
-        <section class="intro justify-content-center">
-          <p>Welcome to Berith by Porscheeffect, where innovation and elegance converge to create smart solutions that redefine modern living and interactions. Explore our premium offerings designed to bring unparalleled comfort, efficiency, convenience and security to your home and business.</p>
-        </section>
-      </section>
-  
-      <div class="featured-solutions text-center" id="solutions">
-        <header>
-          <h1>Solutions</h1>
-        </header>
-        <div class="row gap-5">
-          <div class="featured col">
-           <h4>Smart Home Solutions</h4>
-           <img src="images/smart solutions.png" alt="">
-           <p>Transform your living spaces with our bespoke smart home technologies, designed for ultimate comfort and efficiency.</p>
-          </div>
-          <div class="featured col">
-           <h4>Commercial Innovations</h4>
-           <img src="images/commercial innovations.png" alt="">
-           <p> Elevate your business with advanced solutions tailored to enhance productivity and operational excellence.</p>
-          </div>
-         <div class="featured col">
-           <h4>Luxury Integration</h4>
-           <img src="images/luxury innovation.png" alt="">
-           <p> Experience the fusion of opulence and technology with our exclusive luxury smart solutions</p>
-         </div>
-        </div>
-        <button type="button" class="btn align-self-center btn-outline-secondary"><a href="#contact">Contact Us to Begin your Transformation</a></button>
+        <button class="schedule-btn btn" onclick="handleButtonClick(event)">Schedule appointment</button>
       </div>
-  
-      <section class="solutions" id="discoverSolutions">
-        <!-- <header>
-          <h1>Solutions</h1>
-        </header> -->
-        <div class="row justify-content-center gap-5">
-          <article class="col-4">
-            <img src="images/smart solution icon.png" alt="">
-            <header>
-                <h4>Smart Home Solutions</h4>
-            </header>
-            <p>Our smart home solutions are designed to seamlessly integrate with your lifestyle, offering advanced automation, security, and convenience. From intelligent lighting and climate control to state-of-the-art security systems, our offerings bring a touch of luxury to every aspect of your home.</p>
-          </article>
-          <article class="col-4">
-            <img src="images/commercial solution icon.png" alt="">
-            <header>
-                <h4>Commercial Solutions</h4>
-            </header>
-            <p>Enhance your business environment with our cutting-edge commercial smart solutions. Tailored to meet the unique needs of various industries, our solutions improve efficiency, security, and overall productivity, ensuring that your business operates at its highest potential.</p>
-          </article>
-          <article class="col-4">
-            <img src="images/luxury integration icon.png" alt="">
-            <header>
-                <h4>Luxury Integration</h4>
-            </header>
-            <p>Discover our exclusive range of luxury smart solutions that blend sophistication with advanced technology. Perfect for discerning clients, our products and services elevate your space with an unmatched sense of elegance and refinement.</p>
-          </article>
-        </div>
-      </section>
-  
-      <section class="text-center services">
+    </nav>
+    <!-- Content sections -->
+    <section class="homepage text-center">
+      <div class="homepage-container">
         <header>
-          <h1>Our Services</h1>
+          <h1>Elevating Spaces with Unmatched Sophistication</h1>
         </header>
-        <div class="row">
-          <article class="col">
+        <div>
+          <h2>Where Cutting-Edge Technology Meets Luxury</h2>
+        </div>
+        <button type="button" class="btn btn-outline-secondary"><a href="#discoverSolutions">Discover Our Solutions</a> <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+    <section class="welcome">
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="images/gif intro.MP4" type="video/mp4">
+          Your browser does not support the video tag
+        </video>
+      </div>
+      <section class="intro justify-content-center">
+        <p>Welcome to Berith by Porscheeffect, where innovation and elegance converge to create smart solutions that redefine modern living and interactions. Explore our premium offerings designed to bring unparalleled comfort, efficiency, convenience and security to your home and business.</p>
+      </section>
+    </section>
+    <div class="featured-solutions" id="solutions">
+      <header>
+        <h1>Featured Solutions</h1>
+      </header>
+      <div class="row gap-5 featured-solutions-article text-center">
+        <div class="featured col">
+          <h4>Smart Home Solutions</h4>
+          <img src="images/smart solutions.png" alt="">
+          <p>Transform your living spaces with our bespoke smart home technologies, designed for ultimate comfort and efficiency.</p>
+        </div>
+        <div class="featured col">
+          <h4>Commercial Innovations</h4>
+          <img src="images/commercial innovations.png" alt="">
+          <p> Elevate your business with advanced solutions tailored to enhance productivity and operational excellence.</p>
+        </div>
+        <div class="featured col">
+          <h4>Luxury Integration</h4>
+          <img src="images/luxury innovation.png" alt="">
+          <p> Experience the fusion of opulence and technology with our exclusive luxury smart solutions</p>
+        </div>
+      </div>
+      <button class="btn">Contact Us to Begin Your Transformation</button>
+    </div>
+    <section class="solutions" id="discoverSolutions">
+      <header class="solutions-header">
+        <h1>Solutions</h1>
+      </header>
+      <div class="row solutions-article">
+        <article class="col">
+          <img src="images/smart solution icon.png" alt="">
+          <header>
+            <h4>Smart Home Solutions</h4>
+          </header>
+          <p>Our smart home solutions are designed to seamlessly integrate with your lifestyle, offering advanced automation, security, and convenience. From intelligent lighting and climate control to state-of-the-art security systems, our offerings bring a touch of luxury to every aspect of your home.</p>
+        </article>
+        <article class="col">
+          <img src="images/commercial solution icon.png" alt="">
+          <header>
+            <h4>Commercial Innovations</h4>
+          </header>
+          <p>Enhance your business environment with our cutting-edge commercial smart solutions. Tailored to meet the unique needs of various industries, our solutions improve efficiency, security, and overall productivity, ensuring that your business operates at its highest potential.</p>
+        </article>
+        <article class="col">
+          <img src="images/luxury integration icon.png" alt="">
+          <header>
+            <h4>Luxury Integration</h4>
+          </header>
+          <p>Discover our exclusive range of luxury smart solutions that blend sophistication with advanced technology. Perfect for discerning clients, our products and services elevate your space with an unmatched sense of elegance and refinement.</p>
+        </article>
+      </div>
+    </section>
+    <section class="services">
+      <header class="services-header">
+        <h1>Services</h1>
+      </header>
+      <div class="services-article-img-container text-center">
+        <div class="services-article">
+          <article class="">
             <header>
               <h4>Consultation</h4>
             </header>
             <img src="images/consultation.png" alt="">
             <p>Our expert team offers personalised consultations to understand your specific needs and craft tailored solutions that align with your vision and objectives.</p>
           </article>
-          <article class="col">
+          <article class="">
+            <header>
+              <h4>Support</h4>
+            </header>
+            <img src="images/support.png" alt="">
+            <p>We provide comprehensive support and maintenance services to keep your systems running smoothly and efficiently, with a commitment to exceptional customer care.</p>
+          </article>
+          <article class="">
             <header>
               <h4>Installation</h4>
             </header>
             <img src="images/installation.png" alt="">
             <p>Experience seamless integration with our professional integration and installation services, ensuring that every component of your smart solution functions flawlessly.</p>
           </article>
-          <article class="col">
-            <header>
-              <h4>Support</h4>
-            </header>
-            <img src="" alt="">
-            <p>We provide comprehensive support and maintenance services to keep your systems running smoothly and efficiently, with a commitment to exceptional customer care.</p>
-          </article>
         </div>
-      </section>
-      
-      <footer>
-        <div class="row contact" id="appointment">
-          <section class="contact-us text-center col align-self-center">
-            <p class="contact-header-text">Ready to elevate your space with our luxurious smart solutions? </p>
-            <p class="contact-body-text">Contact us today to schedule a consultation or learn more about our offerings. Our team is here to assist you every step of the way.</p>
-          </section>
-  
-          <section class="col" id="contact">
-            <div class="contact-form ">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <div class="button">
-               <button type="button" class="btn btn-outline-secondary">Submit</button> 
+      </div>
+    </section>
+    <footer>
+      <div class="row contact" id="appointment">
+        <section class="contact-us text-center col align-self-center">
+          <p class="contact-header-text">Ready to elevate your space with our luxurious smart solutions? </p>
+          <p class="contact-body-text">Contact us today to schedule a consultation or learn more about our offerings. Our team is here to assist you every step of the way.</p>
+        </section>
+        <section class="col" id="contact">
+          <form class="contact-form needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="validationCustom01" class="form-label">Name</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="invalid-feedback">
+                Please provide name
               </div>
             </div>
+            <div class="mb-3">
+              <label for="validationCustom2" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="validationCustom2" placeholder="name@example.com" required>
+              <div class="invalid-feedback">
+                Please provide valid email
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="validationCustom3" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="validationCustom3" required>
+            </div>
+            <div class="mb-3">
+              <label for="validationCustom4" class="form-label">Message</label>
+              <textarea class="form-control" id="validationCustom4" rows="4"></textarea>
+            </div>
+            <div class="button">
+              <button type="button" class="btn btn-outline-secondary">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <section class="vertical-address">
+        <div class="d-flex p-2">
+          <div class="vr"></div>
+        </div>
+        <div class="address-phone-email p-2">
+          <section class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p> 1A Frajend Close, Osborn Foreshore Estate, Ikoyi Lagos</p>
+          </section>
+          <section class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <p> +2347031264241</p>
+          </section>
+          <section class="email">
+            <i class="fa-regular fa-envelope"></i> info@theberith.com | <i class="fa-regular fa-envelope"></i> info@porscheeffect.com
           </section>
         </div>
-
-        <section class="row vertical-address">
-          <div class="d-flex col p-2">
-            <div class="vr"></div>
-          </div>
-          <div class="address-phone-email col p-2">
-            <section class="address">
-              <h4><i class="fa-solid fa-location-dot"></i> Address:</h4>
-              <p>1A Frajend Close, Osborn Foreshore Estate, Ikoyi Lagos</p>
-            </section>
-            <section class="phone">
-              <h4> <i class="fa-solid fa-phone"></i> Phone:</h4>
-              <p>+2347031264241</p>
-            </section>
-            <section class="email">
-              <i class="fa-regular fa-envelope"></i> info@theberith.com | <i class="fa-regular fa-envelope"></i> info@porscheeffect.com
-            </section>
-          </div>
-        </section>
-        <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 theberith by porscheeffect. All rights reserved</p>
-      </footer>
-    </div>
-    
-
-    <script src="main.js"></script>
-  </body>
+      </section>
+      <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 theberith by porscheeffect. All rights reserved</p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
+
