@@ -72,7 +72,7 @@
         </div>
         <div class="featured col">
           <h4>Commercial Innovations</h4>
-          <img src="images/commercial innovations 4.png" alt="">
+          <img src="images/commercial innovations.jpg" alt="">
           <p> Elevate your business with advanced solutions tailored to enhance productivity and operational excellence.</p>
         </div>
         <div class="featured col">
@@ -151,31 +151,31 @@
           <p class="contact-body-text">Contact us today to schedule a consultation or learn more about our offerings. Our team is here to assist you every step of the way.</p>
         </section>
         <section class="col" id="contact">
-          <form class="contact-form needs-validation" novalidate>
+          <form class="contact-form needs-validation" action="https://formspree.io/f/xvgpybdz" method="post" novalidate>
             <div class="mb-3">
               <label for="validationCustom1" class="form-label">Name</label>
-              <input type="text" class="form-control" id="validationCustom1" pattern="^[A-Za-z\s]+$" required>
+              <input type="text" name="name" class="form-control" id="validationCustom1" pattern="^[A-Za-z\s]+$" required>
               <div class="invalid-feedback">
                 Please provide a valid name (letters only)!
               </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom2" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="validationCustom2" placeholder="name@example.com" required>
+              <input type="email" name="email" class="form-control" id="validationCustom2" placeholder="name@example.com" required>
               <div class="invalid-feedback">
                 Please provide valid email!
               </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom3" class="form-label">Phone</label>
-              <input type="tel" class="form-control" id="validationCustom3" pattern="^[0-9\-\+\s\(\)]+$" required>
+              <input type="tel" name="phone" class="form-control" id="validationCustom3" pattern="^[0-9\-\+\s\(\)]+$" required>
               <div class="invalid-feedback">
                 Please provide a valid phone number!
               </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom4" class="form-label">Message</label>
-              <textarea class="form-control" id="validationCustom4" rows="4" required></textarea>
+              <textarea class="form-control" name="message" id="validationCustom4" rows="4" required></textarea>
               <div class="invalid-feedback">
                 Please leave us a message!
               </div>
@@ -208,6 +208,7 @@
       <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 theberith by porscheeffect. All rights reserved</p>
     </footer>
   </div>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
