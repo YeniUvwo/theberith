@@ -153,29 +153,35 @@
         <section class="col" id="contact">
           <form class="contact-form needs-validation" novalidate>
             <div class="mb-3">
-              <label for="validationCustom01" class="form-label">Name</label>
-              <input type="text" class="form-control" id="validationCustom01" required>
+              <label for="validationCustom1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="validationCustom1" pattern="^[A-Za-z\s]+$" required>
               <div class="invalid-feedback">
-                Please provide name
+                Please provide a valid name (letters only)!
               </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom2" class="form-label">Email address</label>
               <input type="email" class="form-control" id="validationCustom2" placeholder="name@example.com" required>
               <div class="invalid-feedback">
-                Please provide valid email
+                Please provide valid email!
               </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom3" class="form-label">Phone</label>
-              <input type="tel" class="form-control" id="validationCustom3" required>
+              <input type="tel" class="form-control" id="validationCustom3" pattern="^[0-9\-\+\s\(\)]+$" required>
+              <div class="invalid-feedback">
+                Please provide a valid phone number!
+              </div>
             </div>
             <div class="mb-3">
               <label for="validationCustom4" class="form-label">Message</label>
-              <textarea class="form-control" id="validationCustom4" rows="4"></textarea>
+              <textarea class="form-control" id="validationCustom4" rows="4" required></textarea>
+              <div class="invalid-feedback">
+                Please leave us a message!
+              </div>
             </div>
             <div class="button">
-              <button type="button" class="btn btn-outline-secondary">Submit</button>
+              <button type="submit" class="btn btn-outline-secondary">Submit</button>
             </div>
           </form>
         </section>
