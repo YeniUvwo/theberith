@@ -6,19 +6,21 @@ function redirectToHomepage() {
   window.location.href = './index.html';
 }
 
+function redirectToSolutions() {
+  window.location.href = './solutions.html';
+}
+
 function toggleNav() {
   const navCta = document.querySelector('.nav-cta-container');
   const hamburgerIcon = document.querySelector('.hamburger-container');
   const closeIcon = document.querySelector('.close-container');
-  
+
   navCta.classList.toggle('active');
   
-  if (navCta.classList.contains('active')) {
-    hamburgerIcon.style.display = 'none';
-    closeIcon.style.display = 'block';
-  } else {
-    hamburgerIcon.style.display = 'block';
-    closeIcon.style.display = 'none';
+  if (window.innerWidth < 900) {
+    // Toggle visibility between the hamburger and close icons
+    hamburgerIcon.style.display = navCta.classList.contains('active') ? 'none' : 'block';
+    closeIcon.style.display = navCta.classList.contains('active') ? 'block' : 'none';
   }
 }
 
