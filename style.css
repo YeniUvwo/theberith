@@ -203,6 +203,9 @@ hr {
     justify-content: space-evenly;
 }
 @media(max-width: 665px){
+    .homepage{
+        margin-top: 3em;
+    }
     .homepage h1{
         padding: 0 5%;
     }
@@ -271,7 +274,8 @@ hr {
     margin-bottom: 6em;
 }
 .featured-solutions h3{
-    font-size: clamp(0.9rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
@@ -308,6 +312,9 @@ hr {
     opacity: 0.8;
 }
 @media(max-width: 665px){
+    .featured-solutions{
+        background-color: white;
+    }
     .featured-solutions header{
         margin-bottom: 5em;
     }
@@ -343,7 +350,7 @@ hr {
     padding: 0;
 }
 .services h3{
-    font-size: clamp(0.9rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: bold;
 }
 .services-article-img-container{
@@ -541,7 +548,8 @@ hr {
         padding: 0.5em 2em;
     }
     .about-container h1{
-        margin-bottom: 1em;
+        font-size: clamp(1.5rem, 2.6vw, 2rem);
+        margin-bottom: 2em;
     }
     .about-container h4{
         margin-bottom: 1.5em;
@@ -574,7 +582,7 @@ hr {
     border-bottom: 1px solid black;
     margin-bottom: 8em;
 }
-.solutions h3{
+.solutions h1{
     font-size: clamp(1.5rem, 2.6vw, 2rem);
     font-weight: bold;
 }
@@ -613,6 +621,8 @@ hr {
     .solutions-art{
         flex-direction: column;
         gap: 0;
+        max-width: 600px;
+        margin: 0 auto;
     }
     .solutions-art div{
         margin-bottom: 4em;
