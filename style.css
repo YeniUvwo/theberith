@@ -625,6 +625,7 @@ hr {
         margin: 0 auto;
     }
     .solutions-art div{
+        padding: 2em 2em 1em;
         margin-bottom: 4em;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -632,6 +633,9 @@ hr {
     .home-solutions,
     .innovative-solutions{
         flex-direction: column-reverse;
+    }
+    .solutions h4{
+        margin-bottom: 1.5em;
     }
     .solutions img{
         border-bottom-left-radius: 0;
