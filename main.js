@@ -84,3 +84,29 @@ document.querySelectorAll('.schedule-btn').forEach(button => {
     }
   });
 });
+
+
+// hide mp4 player tag
+document.addEventListener("DOMContentLoaded", function() {
+  function removeDynamicDiv() {
+    var dynamicDiv = document.querySelector('div[id^="neatDiv"]');
+    if (dynamicDiv) {
+      dynamicDiv.remove();
+      console.log('Removed div with id starting with neatDiv');
+    }
+  }
+
+  removeDynamicDiv();
+
+  var intervalId = setInterval(function() {
+    removeDynamicDiv();
+  }, 1000);
+
+
+  setTimeout(function() {
+    clearInterval(intervalId);
+    console.log('Stopped checking for dynamic div');
+  }, 10000); 
+});
+
+
