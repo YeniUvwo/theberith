@@ -464,6 +464,28 @@ hr {
     }
 }
 
+/* thank you modal */
+.thankYouModal{
+    padding: 2em;
+    text-align: center;
+  }
+  .thankYouMessagea{
+    font-size: clamp(1em, 1.3vw, 1.1em);
+    font-weight: bold;
+    margin: 3em 0 2em;
+  } 
+  .thankYouMessageb{
+    font-size: clamp(0.8em, 1.1vw, 0.9em);
+    margin: 0 0 4em;
+  }
+  .fa-check{
+    margin-top: 1em;
+    font-size: clamp(1.8em, 2.4vw, 2em);
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 0.4em 0.5em;
+  }
+
 
 /*  address etc */
 .d-flex{

@@ -43,34 +43,11 @@ document.addEventListener('DOMContentLoaded', setInitialIconState);
 window.addEventListener('resize', setInitialIconState);
 
 
-document.addEventListener('DOMContentLoaded', setInitialIconState);
-window.addEventListener('resize', setInitialIconState);
-
-
 function handleButtonClick(event) {
   event.preventDefault();
   toggleNav();
   document.querySelector('#appointment').scrollIntoView({ behavior: 'smooth' });
 }
-
-//form validation
-(function () {
-  'use strict'
-
-  var forms = document.querySelectorAll('.needs-validation')
-
-  Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
 
 // smooth scrolling from about and solutions page to boook appointment form
 document.querySelectorAll('.schedule-btn').forEach(button => {
@@ -110,3 +87,45 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+(function () {
+  'use strict';
+
+  var forms = document.querySelectorAll('.needs-validation');
+
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault(); // Prevent default to handle form submission via JavaScript
+
+        // Send the form data to Formspree if valid
+        const formData = new FormData(form);
+        fetch('https://formspree.io/f/mldrvpwn', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            localStorage.setItem('formSubmitted', 'true');
+
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            thankYouModal.show();
+
+            form.reset(); // Reset the form after submission
+            form.classList.remove('was-validated');
+          } else {
+            alert('There was a problem submitting the form. Please try again.');
+          }
+        }).catch(error => {
+          alert('There was a problem submitting the form. Please try again later.');
+          console.error('Error:', error);
+        });
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
