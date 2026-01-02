@@ -444,7 +444,7 @@ button {
   position: relative;
   padding: 12% 7% 12%;
   text-align: center;
-  background: url('/assets/images/hero-image-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero-image-bg.jpg') center/cover no-repeat;
   border-top: 1px solid #d8b46a;  
   border-bottom: 1px solid #e2c787;
 }
