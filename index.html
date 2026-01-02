@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== BASIC SEO ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Berith Smart Luxury Solutions | Smart Homes & Commercial Automation</title>
+  <meta name="description" content="Berith delivers luxury smart home solutions, commercial automation, and premium technology integrations designed to elevate modern living and business environments.">
+
+  <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://theberith.com/">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Berith Smart Luxury Solutions">
+  <meta property="og:description" content="Luxury smart home automation and commercial innovation for modern spaces.">
+  <meta property="og:image" content="images/og-cover.jpg">
+  <meta property="og:url" content="https://theberith.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Icons & Bootstrap -->
+  <script src="https://kit.fontawesome.com/8f11bc9294.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container-fluid">
+
+      <div class="logo">
+        <a href="/">
+          <img src="assets/images/grey_logo.png" alt="Berith Logo">
+        </a>
+      </div>
+
+      <div class="nav-ul-closeicon">
+        <ul>
+          <li><a href="solutions/">Solutions</a></li>
+          <li><a href="about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger-container" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU PANEL (move OUTSIDE navbar) ===== -->
+  <div class="nav-cta-container">
+
+    <!-- TOP BAR: Logo + Close -->
+    <div class="mobile-menu-top">
+      <img src="assets/images/grey_logo.png" alt="Berith Logo">
+      <i class="fa-solid fa-xmark close-icon" onclick="toggleNav()"></i>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="nav-ul-closeicon">
+      <ul>
+        <li><a href="solutions/">Solutions</a></li>
+        <li><a href="about/">About Us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu-bottom"></div>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="homepage text-center premium-hero">
+    <div class="homepage-container fade-in">
+      <header>
+        <h1 class="premium-h1">Elevating Spaces with Unmatched Sophistication</h1>
+      </header>
+
+      <h2 class="premium-sub">
+        Where Cutting-Edge Technology Meets Refined Luxury
+      </h2>
+
+      <div class="homepage-btn-container">
+        <a href="#solutions" class="btn premium-btn">
+          Discover Our Solutions <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTRO SECTION ===== -->
+  <section class="homepage-intro fade-in">
+    <p class="intro-text">
+      <span class="welcome-word">Welcome to</span>
+      <span class="berith">Berith by Porscheeffect</span>,
+      where innovation and elegance converge to create smart solutions that elevate your home or business.
+      Experience premium automation crafted for comfort, efficiency, and refined living.
+    </p>
+  </section>
+
+  <!-- ===== FEATURED SOLUTIONS ===== -->
+  <section class="featured-solutions" id="solutions">
+    <header>
+      <h3 class="section-title">Featured Solutions</h3>
+    </header>
+
+    <div class="row gap-5 featured-solutions-article text-center">
+      <div class="featured col fade-up">
+        <h4>Smart Home Solutions</h4>
+        <img src="assets/images/smart-solutions.jpg" alt="Smart Home Solutions">
+        <p>Transform your living space with seamless automation, climate control, premium lighting, and next-level security.</p>
+      </div>
+
+      <div class="featured col fade-up">
+        <h4>Commercial Innovations</h4>
+        <img src="assets/images/commercial_innovations.jpg" alt="Commercial Innovations">
+        <p>Enhance and streamline your business operations with tailored intelligent solutions built for productivity.</p>
+      </div>
+
+      <div class="featured col fade-up">
+        <h4>Luxury Integration</h4>
+        <img src="assets/images/luxury_innovation.jpg" alt="Luxury Luxury Integration">
+        <p>A fusion of luxury and technology — designed exclusively for clients who desire the extraordinary.</p>
+      </div>
+    </div>
+
+    <a href="/contact/" class="btn premium-btn center-btn">Contact Us to Begin Your Transformation</a>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services fade-in">
+    <header class="services-header">
+      <h3 class="section-title">Services</h3>
+    </header>
+
+    <div class="services-article-img-container text-center">
+      <div class="services-article">
+        
+        <article class="service-card">
+          <header><h4>Consultation</h4></header>
+          <img src="assets/images/consultation.jpg" alt="Consultation">
+          <p>Personalised expert guidance that aligns your vision with the most suitable smart solutions.</p>
+        </article>
+
+        <article class="service-card">
+          <header><h4>Support</h4></header>
+          <img src="assets/images/support.jpg" alt="Support">
+          <p>Reliable maintenance and continuous client support to ensure seamless operation.</p>
+        </article>
+
+        <article class="service-card">
+          <header><h4>Installation</h4></header>
+          <img src="assets/images/installation.jpg" alt="Installation">
+          <p>Professional integration handled with precision, care, and strict attention to detail.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer fade-in">
+    <div class="footer-grid">
+
+      <!-- CONTACT / ADDRESS -->
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 1A Frajend Close, Osborn Foreshore Estate, Ikoyi Lagos</p>
+        <p><i class="fa-solid fa-phone"></i> +2347031264241</p>
+        <p><i class="fa-regular fa-envelope"></i> info@theberith.com</p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/solutions/">Solutions</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- BRAND STATEMENT -->
+      <div class="footer-column">
+        <h4>About Berith</h4>
+        <p class="footer-about">
+          Berith delivers luxury smart solutions for residential and commercial spaces—combining refined design, intelligent technology, and seamless automation to elevate modern living.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        <i class="fa-regular fa-copyright"></i>
+        <span id="currentYear"></span> Berith by Porscheeffect. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update the year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

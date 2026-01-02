@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- BASIC SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Berith | Luxury Smart Solutions & Brand Story</title>
+  <meta name="description" content="Discover the story, mission, and leadership behind Berith — a premium provider of luxury smart home solutions and commercial automation.">
+
+  <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+  
+  <link rel="canonical" href="https://theberith.com/about/">
+
+  <!-- OG TAGS -->
+  <meta property="og:title" content="About Berith">
+  <meta property="og:description" content="Our mission, heritage, and leadership in luxury smart technology.">
+  <meta property="og:image" content="/images/about-cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Icons/Bootstrap -->
+  <script src="https://kit.fontawesome.com/8f11bc9294.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container-fluid">
+
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/images/grey_logo.png" alt="Berith Logo">
+        </a>
+      </div>
+
+      <div class="nav-ul-closeicon">
+        <ul>
+          <li><a href="/solutions/">Solutions</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger-container" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU PANEL (move OUTSIDE navbar) ===== -->
+  <div class="nav-cta-container">
+
+    <!-- TOP BAR: Logo + Close -->
+    <div class="mobile-menu-top">
+      <img src="assets/images/grey_logo.png" alt="Berith Logo">
+      <i class="fa-solid fa-xmark close-icon" onclick="toggleNav()"></i>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="nav-ul-closeicon">
+      <ul>
+        <li><a href="solutions/">Solutions</a></li>
+        <li><a href="about/">About Us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero warm-fade">
+    <div class="about-hero-inner fade-in">
+      <h1 class="playfair-header">About Us</h1>
+      <p class="luxury-sub">
+        Redefining the future of intelligent living with precision, sophistication, and unwavering excellence.
+      </p>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="story-section fade-up">
+    <div class="story-text">
+      <h2 class="section-title playfair-header">Our Story</h2>
+      <p>
+        Berith began with a vision to elevate modern spaces through intelligent technology crafted with luxury-level precision.
+        From our earliest concepts to the refined experiences we deliver today, our journey has been shaped by innovation, artistry,
+        and a deep commitment to enhancing how people live and work.
+      </p>
+    </div>
+
+    <div class="story-image">
+      <img src="/images/our story.webp" alt="Our Story">
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section fade-up">
+    <div class="mission-image">
+      <img src="/images/smart home-about us page.webp" alt="Our Mission">
+    </div>
+
+    <div class="mission-text">
+      <h2 class="section-title playfair-header">Our Mission</h2>
+      <p>
+        To deliver innovative smart solutions that enrich your lifestyle and business operations — all while upholding uncompromising standards
+        of quality, integrity, and customer satisfaction.
+      </p>
+      <p>
+        Every environment we transform is a reflection of our belief that technology should be seamless, intelligent, and beautifully refined.
+      </p>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="leader-section fade-up">
+    <div class="leader-image">
+      <img src="/images/meet-our-leader.webp" alt="Meet Our Leader">
+    </div>
+
+    <div class="leader-text">
+      <h2 class="section-title playfair-header">Meet Our Leader</h2>
+      <p>
+        Tolulope Obianwu, Managing Director and CEO of Porscheeffect Enterprise, leads Berith with a passion for excellence and a distinguished
+        history of innovation. Her vision continues to shape Berith as a brand synonymous with quality, precision, and transformative experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer fade-in">
+    <div class="footer-grid">
+
+      <!-- CONTACT / ADDRESS -->
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 1A Frajend Close, Osborn Foreshore Estate, Ikoyi Lagos</p>
+        <p><i class="fa-solid fa-phone"></i> +2347031264241</p>
+        <p><i class="fa-regular fa-envelope"></i> info@theberith.com</p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/solutions/">Solutions</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- BRAND STATEMENT -->
+      <div class="footer-column">
+        <h4>About Berith</h4>
+        <p class="footer-about">
+          Berith delivers luxury smart solutions for residential and commercial spaces—combining refined design, intelligent technology, and seamless automation to elevate modern living.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        <i class="fa-regular fa-copyright"></i>
+        <span id="currentYear"></span> Berith by Porscheeffect. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update the year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
